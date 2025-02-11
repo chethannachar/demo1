@@ -1,0 +1,125 @@
+/* update.css */
+
+/* Base Styles */
+
+body {
+  background-color: #f0f2f5;
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  margin-top: 100px;
+
+}
+
+.update-container {
+  background-color: #ffffff;
+  padding: 40px 30px;
+  margin: 50px auto;
+  font-size: 24px;
+  width: 600px;
+  border-radius: 30px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.update-container h2 {
+  margin-bottom: 20px;
+  color: #333333;
+  font-size: 28px;
+  text-align: center;
+}
+.form{
+  font-size: 24px;
+}
+.update-container form {
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px;
+  gap: 20px;
+}
+
+.update-container input {
+  padding: 12px 15px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 24px;
+  transition: border-color 0.3s;
+}
+
+/* Button */
+.form button[type="submit"] {
+  background-color: #4CAF50; /* Green background */
+  color: white; /* White text */
+  font-size: 22px; /* Font size */
+  padding: 10px 20px; /* Padding */
+  border: none; /* No border */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 150px;
+
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transitions */
+}
+
+/* Hover and Focus State */
+.form button[type="submit"]:hover,
+.form button[type="submit"]:focus {
+  background-color: #45a049; /* Darker green on hover */
+  transform: scale(1.05); /* Slightly larger on hover */
+  outline: none; /* Remove default outline on focus */
+}
+
+/* Active State */
+.form button[type="submit"]:active {
+  background-color: #3e8e41; /* Even darker green on active */
+  transform: scale(1); /* Reset scale on active */
+}
+
+.form button[type="submit"]:disabled {
+  background-color: #cccccc; /* Gray background for disabled state */
+  cursor: not-allowed; /* Not-allowed cursor for disabled state */
+}
+.form input{
+  font-size: 24px;
+}
+.form button{
+  font-size: 18px;
+}
+/*
+.update-container button {
+  padding: 12px 15px;
+  background-color: #0ee29b;
+  color: #ffffff;
+  border: none;
+  margin-left: 160px;
+  border-radius: 20px;
+  width:100px;
+  font-size: 24px;
+  padding-right: 108px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+ 
+}
+*/
+
+
+.update-container button {
+  background-color: #00408d;
+}
+.update-container input{
+  width:520px;
+  margin-top: -50px;
+}
+.update-container p {
+  text-align: center;
+  margin-top: 20px;
+  color: #666666;
+  font-size: 24px;
+}
+
+/* Media Queries */
+
+/* Tablets and small desktops */
