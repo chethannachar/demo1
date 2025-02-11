@@ -1,0 +1,221 @@
+/* Base Styles */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f7f9fc;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  h1 {
+    font-weight: bold;
+    color: #2c3e50; /* Deep blue color */
+    text-align: center;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1); /* Adds depth */
+    position: relative;
+    margin-top: -40px;
+    padding-top: 0px;
+  }
+  
+  /* Decorative Underline */
+  h1::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -10px;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 4px;
+    background-color: #e74c3c;  /* Contrasting color for emphasis */
+    border-radius: 2px;
+  }
+  
+  /* Keyframes for Animation */
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  /* Container */
+  .create-container {
+    max-width: 600px;
+    margin: 50px auto;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-top: 100px;
+    padding-left: 60px;
+    padding-right: 90px;
+    padding-top: 0px;
+    padding-bottom: 40px;
+  }
+  
+  /* Heading */
+  h1 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    transition: font-size 0.3s ease;
+    margin-top: 0px;
+  }
+  .b3{
+    margin-top: 50px;
+    margin-left: 190px;
+    width: fit-content;
+    font-size: 24px;
+  }
+  h2{
+    margin-top: -15px;
+    text-align: center;
+    margin-left: 20px;
+  }
+  .p{
+    text-align: center;
+    font-size: 22px;
+  }
+  /* Form */
+  .create1 {
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    padding-top: 20px;
+  }
+  .create2 input{
+     font-size: 24px;
+
+
+  }
+  .create2 button{
+    font-size: 18px;
+  }
+  .create2 form{
+    padding-right: 100px;
+    padding-left: 100px;
+
+  }
+  
+  /* Textarea Styling */
+  .create-form input {
+    padding: 12px 16px; /* Reduced padding */
+    font-size: 24px;
+    border: 2px solid #ddd;
+    border-radius: 6px;
+    min-height: 20px; /* Reduced minimum height */
+    max-width: 100%;
+    background-color: #f9f9f9;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease, height 0.3s ease;
+  }
+  
+  /* Placeholder Text Styling */
+  .create-form input::placeholder {
+    color: #999;
+    font-style: italic;
+    font-size: 18px;
+  }
+  
+  /* Focus Effect */
+  .create-form input:focus {
+    border-color: #3498db;
+    outline: none;
+    box-shadow: 0 0 8px rgba(52, 152, 219, 0.3);
+  }
+  
+  /* Submit Button Styling */
+  .create-form button {
+    background-color: #1abc9c;
+    color: #ffffff;
+    border: none;
+    margin-top: -20px;
+    padding: 12px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .create-form button:hover {
+    background-color: #16a085;
+    transform: translateY(-3px);
+  }
+  
+  /* Aligning Text Next to Buttons */
+  .create-form .action {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .create-form .action-text {
+    margin-left: 10px;
+    flex: 1;
+    text-align: left;
+  }
+  
+  /* Responsive Media Queries */
+  
+  /* For tablets */
+  @media (max-width: 768px) {
+    .create-container {
+      padding: 20px 15px;
+    }
+  
+    .create-container h1 {
+      font-size: 2.2rem;
+      margin-bottom: 20px;
+    }
+  
+    .create-form input {
+      padding: 8px 12px;
+      max-width: 100%;
+    }
+  
+    .create-form button {
+      font-size: 14px;
+      padding: 10px 16px;
+    }
+  }
+  
+  /* For phones */
+  @media (max-width: 600px) {
+    .create-container {
+      padding: 20px 15px;
+    }
+  
+    .create-container h1 {
+      font-size: 2rem;
+    }
+  
+    .create-form input {
+      font-size: 24px;
+      padding: 8px 12px;
+    }
+  
+    .create-form button {
+      font-size: 14px;
+      padding: 10px 16px;
+    }
+  
+    .create-form .action {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .create-form .action-text {
+      margin-left: 0;
+      margin-top: 10px;
+      text-align: left;
+    }
+  }
+  
